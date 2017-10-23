@@ -15,3 +15,9 @@ def print_scores(names, scores):
 	for i in range(0, len(names)):
 		#print names[i] , "scored" , scores[i]
 		print "%s scored %s on the test" % (names[i], scores[i])
+
+# filter pattern
+def congratulations(names, scores):
+	for i in range(0, len(names)):
+		if (scores[i] == 100):
+			print "Congratulations %s!  You got a perfect score!" % names[i]
